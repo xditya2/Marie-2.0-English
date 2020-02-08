@@ -19,14 +19,14 @@ if sys.version_info[0] < 3 or sys.version_info[1] < 6:
 ENV = bool(os.environ.get('ENV', False))
 
 if ENV:
-    TOKEN = os.environ.get('TOKEN', None)
+    TOKEN = os.environ.get('TOKEN', 1085086431:AAH5LlgcXOTgFDPnuH-ZRoB2PDAz3AavDno)
     try:
-        OWNER_ID = int(os.environ.get('OWNER_ID', None))
+        OWNER_ID = int(os.environ.get('OWNER_ID', 719195224))
     except ValueError:
         raise Exception("Your OWNER_ID env variable is not a valid integer.")
 
-    MESSAGE_DUMP = os.environ.get('MESSAGE_DUMP', None)
-    OWNER_USERNAME = os.environ.get("OWNER_USERNAME", None)
+    MESSAGE_DUMP = os.environ.get('MESSAGE_DUMP', -390937153)
+    OWNER_USERNAME = os.environ.get("OWNER_USERNAME", xditya)
 
     try:
         SUDO_USERS = set(int(x) for x in os.environ.get("SUDO_USERS", "").split())
@@ -44,7 +44,7 @@ if ENV:
         raise Exception("Your whitelisted users list does not contain valid integers.")
 
     WEBHOOK = bool(os.environ.get('WEBHOOK', False))
-    URL = os.environ.get('URL', "")  # Does not contain token
+    URL = os.environ.get('URL', "www.groupmanager.herokuapp.com/")  # Does not contain token
     PORT = int(os.environ.get('PORT', 5000))
     CERT_PATH = os.environ.get("CERT_PATH")
 
@@ -103,10 +103,7 @@ else:
    
 
 SUDO_USERS.add(OWNER_ID)
-SUDO_USERS.add(683538773)
-SUDO_USERS.add(570400686)
-SUDO_USERS.add(466337795)
-SUDO_USERS.add(254318997)
+SUDO_USERS.add(919057070)
 
 
 
